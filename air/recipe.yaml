@@ -1,5 +1,5 @@
 context:
-  version: "0.7.0"
+  version: "0.8.0"
 
 package:
   name: air
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/posit-dev/air/archive/refs/tags/${{ version }}.tar.gz
-  sha256: f33fc7aae6829f8471ca3b9144b0a314137393dc5423e10fa313a43278ffc6eb
+  sha256: fbce4a9698c756dc4d65eb6cb845fcdd8bca952f25b988711037b6ff9b82a99c
 
 build:
   script:
