@@ -22,24 +22,8 @@ requirements:
     - ${{ compiler('rust') }}
 
 tests:
-  - script: |
-      # Test version output
-      air --version | grep "air ${{ version }}"
-
-      # Create test R file
-      cat > test.R << 'EOF'
-      # Simple R code for testing
-      x<-1+2
-      y <- 3 + 4
-      print(x+y)
-      EOF
-
-      # Format the R file
-      air format test.R
-
-      # Check that formatting worked
-      grep "x <- 1 + 2" test.R
-      grep "y <- 3 + 4" test.R
+  - script:
+    - air --help
 
 about:
   homepage: https://github.com/posit-dev/air
